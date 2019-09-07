@@ -31,18 +31,18 @@ ___
 • EJERCICIO 1:
 Leyendo los valores de un objeto URL.
 Ejecute el archivo DatosURL de la carpeta E1datosURL.
-![](src/main/resources/readme/1-urlDatos.PNG)
+![](src/main/resources/Readme/1-urlDatos.PNG)
 
 • EJERCICIO 2:
 Leyendo páginas de internet
 Ejecute el archivo BrowserApp de la carpeta E2browser e ingrese una página web. Al ejecutarlo, la aplicación genera un archivo html con la información capturada de la página, el cua les guardado en <[https://github.com/acai-bjca/ClienteServidorAREP/blob/master/src/main/resources/pagina.html](https://github.com/acai-bjca/ClienteServidorAREP/blob/master/src/main/resources/resultado.html)>.
 
-![](src/main/resources/readme/2-leerPagina.PNG)
+![](src/main/resources/Readme/2-leerPagina.PNG)
 
 • EJERCICIO 3:
 Servidor que recibe un número y responde el cuadrado de este número.
 Diríjase a la carpeta E3cuadradoNum, ejecute priemro el archivo EchoServer, y luego EchoClient. Ingrese un número y la aplicación le dará el resultado. 
-![](src/main/resources/readme/3-servidorCuadrado.PNG)
+![](src/main/resources/Readme/3-servidorCuadrado.PNG)
 
 • EJERCICIO 4:
 Servidor que recibe un número y responde el resultado de una operación trigonométrica sobre el número:
@@ -50,7 +50,7 @@ Ejecute la clase TrigonometryServer, luego TrigonometryClient e ingrese un núme
 
 El servidor recibe un núumero y responde con una operación sobre este número. Este servidor puede recibir un mensaje que empiece por “fun:”, si recibe este mensaje cambia la operación a las especificada. El servidor responde las funciones seno, coseno y tangente. Por defecto empieza calculando el coseno. Ejemplo: si el primer número que recibe es 0, debe responder 1, si después recibe π/2 debe responder 0, si luego recibe “fun:sin” debe cambiar la operación actual a seno, es decir a a partir de ese momento debe calcular senos. Si enseguida recibe 0 debe responder 0.
 
-![](src/main/resources/readme/4-servidorTrigo.PNG)
+![](src/main/resources/Readme/4-servidorTrigo.PNG)
 
 • EJERCICIO 4:
 Servidor que soporta múltiples solicitudes seguidas (no concurrentes) de imágenes y archivos html.
