@@ -11,12 +11,12 @@ import java.util.Scanner;
  * Hello world!
  *
  */
-public class ClienteServidor {
+public class DatosURL {
 
     public static void main(String[] args) {
         //Ejercicio 1
         try {
-            URL myURL = new URL("https://www.otranasa.gov:6030/moon/imagenes/imagenLuna.jpg?aÃ±o=2019");
+            URL myURL = new URL("https://www.otranasa.gov:6030/moon/imagenes/imagenLuna.jpg?año=2019");
 
             System.out.println("protocolo =" + myURL.getProtocol());
             System.out.println("autoridad =" + myURL.getAuthority());

@@ -20,7 +20,13 @@
             <groupId>org.webjars.npm</groupId>
             <artifactId>utf-8-validate</artifactId>
             <version>1.2.1</version>
+        </dependency>        
+        <dependency>
+            <groupId>org.webjars.npm</groupId>
+            <artifactId>utf-8-validate</artifactId>
+            <version>1.2.1</version>
         </dependency>
+
     </dependencies>
   
   

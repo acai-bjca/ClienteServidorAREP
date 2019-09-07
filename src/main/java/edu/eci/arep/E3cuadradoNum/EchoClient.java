@@ -24,6 +24,7 @@ public class EchoClient {
 
         BufferedReader stdIn = new BufferedReader(new InputStreamReader(System.in));
         String userInput;
+        System.out.println("Ingrese un número:");
         while ((userInput = stdIn.readLine()) != null) {
             out.println(userInput);
             System.out.println("echo: " + in.readLine());

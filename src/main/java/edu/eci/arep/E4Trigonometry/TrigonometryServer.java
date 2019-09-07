@@ -2,6 +2,7 @@ package edu.eci.arep.E4Trigonometry;
 
 import java.net.*;
 import java.io.*;
+import java.text.DecimalFormat;
 
 public class TrigonometryServer {
 
@@ -36,7 +37,7 @@ public class TrigonometryServer {
             try {
                 //Trata de convertir entrada en numero
                 double numero = Double.parseDouble(inputLine);
-                numero = (numero * Math.PI) / 180;
+                numero = (numero * Math.PI) / 180;                
                 if (operacion.equals("cos")) {
                     rta = Math.cos(numero);
                 } else if (operacion.equals("sin")) {
@@ -44,14 +45,16 @@ public class TrigonometryServer {
                 } else if (operacion.equals("tan")) {
                     rta = Math.tan(numero);
                 }
+                DecimalFormat df = new DecimalFormat("#.00");
+                rta = (double)Math.round(rta * 100d) / 100d;
                 outputLine = "Respuesta: " + rta;
             } catch (NumberFormatException e) {
                 //si al entrada no es numero, captura excepcion, lo cual indica que cambio de operacion
                 if (inputLine.contains("fun:")) {
-                    operacion = inputLine.substring(inputLine.indexOf(":") + 1); //obtiene la funcion que est'a espues de los dos puntos
+                    operacion = inputLine.substring(inputLine.indexOf(":") + 1); //obtiene la funcion que está después de los dos puntos
                 }
                 outputLine = "Respuesta: " + inputLine;
-                if (outputLine.equals("Respuesta: Bye.")) {
+                if (inputLine.contains("fin")) {
                     break;
                 }
             }
