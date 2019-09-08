@@ -1,14 +1,13 @@
-package edu.eci.arep.e1datosURL;
+package edu.eci.arep.ADatosURL;
 
 import java.net.MalformedURLException;
 import java.net.URL;
 
+/**
+* DatosURL Muestra en pantalla los datos de una url
+*/
 public class DatosURL {
-
-    /**
-     * Muestra en pantalla los datos de una url
-     * @param args Parámetros que recibe la clase principal
-     */
+    
     public static void main(String[] args) {
         //Ejercicio 1
         try {
