@@ -7,7 +7,7 @@ ___
 ___
 ### Documentación
 
-Para leer la documentación diríjase a: <https://github.com/acai-bjca/ClienteSevidorAREP/tree/master/src/main/resources/documentacion/apidocs/edu/eci/arep/spark>
+Para leer la documentación diríjase a: <https://github.com/acai-bjca/ClienteServidorAREP/tree/master/src/main/resources/documentacion/apidocs>
 
 ___
 ### Uso del proyecto como librería
