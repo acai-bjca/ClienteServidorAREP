@@ -1,4 +1,4 @@
-package edu.eci.arep.E5multiplesSolicitudes;
+package edu.eci.arep.e5multiplesSolicitudes;
 
 import java.net.*;
 import java.util.StringTokenizer;
@@ -36,7 +36,8 @@ public class HttpServer2 {
 
     public static void respuestaSolicitud(Socket clientSocket, PrintWriter out, BufferedReader in,
             BufferedOutputStream salidaDatos) throws IOException {
-        String inputLine, solicitud = "";
+        String inputLine;
+        String solicitud = "";
         int count = 0;
         while ((inputLine = in.readLine()) != null) {
             System.out.println("Received: " + inputLine);
@@ -56,17 +57,18 @@ public class HttpServer2 {
         // su tipo a enviar.
 
         String content = "";
-        String error = "200 ", mensaje = "OK";
+        String error = "200 ";
+        String mensaje = "OK";
         if (!archivoSolicitud.equals("/")) {
             if (archivoSolicitud.contains(".")) {
                 String tipoArchivo = archivoSolicitud.substring(archivoSolicitud.indexOf(".") + 1);
                 String nombreArchivo = archivoSolicitud.substring(0, archivoSolicitud.indexOf("."));
                 archivo = nombreArchivo + "." + tipoArchivo;
-                if (tipoArchivo.equals("html")) {
+                if(tipoArchivo.equals("html")){
                     content = "text/html";
-                } else if (tipoArchivo.equals("jpg")) {
+                }else if (tipoArchivo.equals("jpg")){
                     content = "image/jpg";
-                } else {
+                }else{
                     error = "400 ";
                     mensaje = "BAD REQUEST";
                     archivo = "badRequest.html";
@@ -141,9 +143,7 @@ public class HttpServer2 {
 
         } catch (IOException e) {
             System.err.println("Accept failed.");
-            System.exit(1);
         }
-
         out.close();
         in.close();
         salidaDatos.close();

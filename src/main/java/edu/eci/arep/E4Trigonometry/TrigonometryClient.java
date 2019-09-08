@@ -1,4 +1,4 @@
-package edu.eci.arep.E4Trigonometry;
+package edu.eci.arep.e4Trigonometry;
 
 import java.net.*;
 import java.io.*;

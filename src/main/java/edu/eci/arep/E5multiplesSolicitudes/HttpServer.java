@@ -1,4 +1,4 @@
-package edu.eci.arep.E5multiplesSolicitudes;
+package edu.eci.arep.e5multiplesSolicitudes;
 
 import java.net.*;
 import java.io.*;
@@ -22,15 +22,15 @@ public class HttpServer {
             System.out.println("Listo para recibir ...");
             clientSocket = serverSocket.accept();         
         } catch (IOException e) {
-            System.err.println("Accept failed.");
-            System.exit(1);
+            System.err.println("Accept failed.");           
         }
         
         out = new PrintWriter(clientSocket.getOutputStream(), true);
         in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
         
         //Muestra la petici�n del cliente.
-        String inputLine, outputLine;
+        String inputLine;
+        String outputLine;
         while ((inputLine = in.readLine()) != null) {
             System.out.println("Received: " + inputLine);
             if (!in.ready()) {

@@ -1,4 +1,4 @@
-package edu.eci.arep.E4Trigonometry;
+package edu.eci.arep.e4Trigonometry;
 
 import java.net.*;
 import java.io.*;
@@ -26,7 +26,8 @@ public class TrigonometryServer {
         PrintWriter out = new PrintWriter(clientSocket.getOutputStream(), true);
         BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
         
-        String inputLine, outputLine;
+        String inputLine;
+        String outputLine;
         String operacionPred = "cos";
         String operacion = operacionPred;
         while ((inputLine = in.readLine()) != null) {
@@ -36,14 +37,13 @@ public class TrigonometryServer {
                 //Trata de convertir entrada en numero
                 double numero = Double.parseDouble(inputLine);
                 numero = (numero * Math.PI) / 180;                
-                if (operacion.equals("cos")) {
+                if(operacion.equals("cos")) {
                     rta = Math.cos(numero);
-                } else if (operacion.equals("sin")) {
+                }else if(operacion.equals("sin")) {
                     rta = Math.sin(numero);
-                } else if (operacion.equals("tan")) {
+                }else if(operacion.equals("tan")) {
                     rta = Math.tan(numero);
-                }
-                DecimalFormat df = new DecimalFormat("#.00");
+                }                
                 rta = (double)Math.round(rta * 100d) / 100d;
                 outputLine = "Respuesta: " + rta;
             } catch (NumberFormatException e) {

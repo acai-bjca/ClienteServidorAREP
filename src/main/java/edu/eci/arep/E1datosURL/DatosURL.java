@@ -1,4 +1,4 @@
-package edu.eci.arep.E1datosURL;
+package edu.eci.arep.e1datosURL;
 
 import java.net.MalformedURLException;
 import java.net.URL;

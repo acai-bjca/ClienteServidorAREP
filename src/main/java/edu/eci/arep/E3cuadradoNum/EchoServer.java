@@ -1,4 +1,4 @@
-package edu.eci.arep.E3cuadradoNum;
+package edu.eci.arep.e3cuadradoNum;
 
 import java.net.*;
 import java.io.*;
@@ -23,7 +23,8 @@ public class EchoServer {
         }
         PrintWriter out = new PrintWriter(clientSocket.getOutputStream(), true);
         BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
-        String inputLine, outputLine;
+        String inputLine;
+        String outputLine;
         while ((inputLine = in.readLine()) != null) {
             System.out.println("Mensaje: " + inputLine);
             try {

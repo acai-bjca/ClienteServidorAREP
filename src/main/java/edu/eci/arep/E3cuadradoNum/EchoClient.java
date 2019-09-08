@@ -1,4 +1,4 @@
-package edu.eci.arep.E3cuadradoNum;
+package edu.eci.arep.e3cuadradoNum;
 
 import java.io.*;
 import java.net.*;

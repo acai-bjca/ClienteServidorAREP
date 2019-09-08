@@ -1,4 +1,4 @@
-package edu.eci.arep.E6Datagramas;
+package edu.eci.arep.e6Datagramas;
 
 import java.io.IOException;
 import java.net.DatagramPacket;
@@ -11,7 +11,7 @@ import java.util.logging.Logger;
 
 public class DatagramTimeServer {
 
-    DatagramSocket socket;
+    private DatagramSocket socket;
 
     public DatagramTimeServer() {
         try {
