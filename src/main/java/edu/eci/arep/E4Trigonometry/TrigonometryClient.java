@@ -3,8 +3,15 @@ package edu.eci.arep.e4Trigonometry;
 import java.net.*;
 import java.io.*;
 
-public class TrigonometryClient {
 
+/**
+     * Cliente que envía peticiones al servidor TrigonometryServer. Puede enviar
+     * como peticion un numero o una funcion de la forma "fun:sin". Para que el
+     * programa termine, puede enviar "fin". 
+     *
+     */
+public class TrigonometryClient {
+    
     public static void main(String[] args) throws IOException {
         Socket echoSocket = null;
         PrintWriter out = null;

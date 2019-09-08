@@ -5,6 +5,12 @@ import java.net.*;
 
 public class EchoClient {
 
+    /**
+     * Cliente que envía peticiones al servidor EchoServer.
+     * Puede enviar como peticion un numero.
+     * @param args Parámetros clase principal
+     * @throws IOException Excepcion de entrada y salida
+     */
     public static void main(String[] args) throws IOException {
         Socket echoSocket = null;
         PrintWriter out = null;
@@ -15,9 +21,9 @@ public class EchoClient {
             out = new PrintWriter(echoSocket.getOutputStream(), true);
             in = new BufferedReader(new InputStreamReader(echoSocket.getInputStream()));
         } catch (UnknownHostException e) {
-            System.err.println("Donï¿½t know about host!.");
+            System.err.println("Don't know about host!.");
         } catch (IOException e) {
-            System.err.println("Couldnï¿½t get I/O for " + "the connection to: localhost.");            
+            System.err.println("Couldn't get I/O for " + "the connection to: localhost.");            
         }
 
         BufferedReader stdIn = new BufferedReader(new InputStreamReader(System.in));

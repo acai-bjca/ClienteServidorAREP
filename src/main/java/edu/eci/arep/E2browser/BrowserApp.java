@@ -42,6 +42,11 @@ public class BrowserApp {
         }
     }
 
+    /**
+     * saveURLData Lee la direccion url del input, y obtiene el archivo solicitado
+     * @param urlData RequestURI de la petición
+     * @throws IOException Excepcion que se uede presentar al crear un FileWriter de archivo no existente
+     */
     public static void saveURLData(String urlData) throws IOException {
         System.out.println("Save url data; "+urlData);
         String ruta = "src/main/resources/resultado.html";

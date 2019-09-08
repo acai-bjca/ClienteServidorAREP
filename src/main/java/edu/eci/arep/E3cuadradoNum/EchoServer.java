@@ -5,6 +5,12 @@ import java.io.*;
 
 public class EchoServer {
 
+    /**
+     * Servidor que recibe peticioens del  cleitne EchoClient.
+     * Puede recibir un numero, el cual es elevado al cuadrado y devuelto al cliente.
+     * @param args Parámetros clase principal
+     * @throws IOException Excepcion de entrada y salida
+     */
     public static void main(String[] args) throws IOException {
 
         ServerSocket serverSocket = null;

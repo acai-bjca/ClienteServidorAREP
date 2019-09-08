@@ -4,6 +4,11 @@ import java.net.*;
 import java.io.*;
 import java.text.DecimalFormat;
 
+/**
+ * Servidor que responde a peticiones del cliente TrigonometryClient. Cómo
+ * respuesta enviará el resultado de la función trigonométrica solicitada sobre
+ * el número recibido, que por defecto al iniciar es cos.
+ */
 public class TrigonometryServer {
 
     public static void main(String[] args) throws IOException {
@@ -25,7 +30,7 @@ public class TrigonometryServer {
 
         PrintWriter out = new PrintWriter(clientSocket.getOutputStream(), true);
         BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
-        
+
         String inputLine;
         String outputLine;
         String operacionPred = "cos";
@@ -36,15 +41,15 @@ public class TrigonometryServer {
             try {
                 //Trata de convertir entrada en numero
                 double numero = Double.parseDouble(inputLine);
-                numero = (numero * Math.PI) / 180;                
-                if(operacion.equals("cos")) {
+                numero = (numero * Math.PI) / 180;
+                if (operacion.equals("cos")) {
                     rta = Math.cos(numero);
-                }else if(operacion.equals("sin")) {
+                } else if (operacion.equals("sin")) {
                     rta = Math.sin(numero);
-                }else if(operacion.equals("tan")) {
+                } else if (operacion.equals("tan")) {
                     rta = Math.tan(numero);
-                }                
-                rta = (double)Math.round(rta * 100d) / 100d;
+                }
+                rta = (double) Math.round(rta * 100d) / 100d;
                 outputLine = "Respuesta: " + rta;
             } catch (NumberFormatException e) {
                 //si al entrada no es numero, captura excepcion, lo cual indica que cambio de operacion

@@ -13,8 +13,8 @@ public class HttpServer2 {
     private static final int PUERTO = 35000;
 
     /**
-     * Este mï¿½todo convierte en un arreglo de bytes el archivo file que se le
-     * pasï¿½ como parï¿½metro.
+     * Este metodo convierte en un arreglo de bytes el archivo file que se le
+     * paso como parametro.
      *
      * @param file
      * @param fileLength
@@ -34,6 +34,15 @@ public class HttpServer2 {
         return fileData;
     }
 
+    /**
+     * Procesa la solicitud, busca en lso archivos, y devuelve lo encontrado. 
+     * En caso de no encotnrar archivos devuelve una respuesta http de tipo not found.
+     * @param clientSocket Socket o punto final  del cliente para comunicación
+     * @param out Stream o flujo de salida
+     * @param in Stream o flujo de entrada
+     * @param salidaDatos Muestra la respuesta al cliente
+     * @throws IOException Excepcio nde entrada y salida
+     */
     public static void respuestaSolicitud(Socket clientSocket, PrintWriter out, BufferedReader in,
             BufferedOutputStream salidaDatos) throws IOException {
         String inputLine;
@@ -42,7 +51,7 @@ public class HttpServer2 {
         while ((inputLine = in.readLine()) != null) {
             System.out.println("Received: " + inputLine);
             if (count < 1) {
-                solicitud = inputLine; // Lee la primera lï¿½nea de la solicitud
+                solicitud = inputLine; // Lee la primera linea de la solicitud
             }
             if (!in.ready()) {
                 break;
@@ -103,7 +112,7 @@ public class HttpServer2 {
         datos = convertirABytes(file, fileLength);
 
         // Se debe enviar el encabezado de respuesta, para que el cliente entienda y
-        // muestre lo que el servidor enviï¿½.
+        // muestre lo que el servidor envio
         out.println("HTTP/1.1 " + error + mensaje);
         out.println("Content-type: " + content);
         out.println("Content-length: " + fileLength);
@@ -120,7 +129,6 @@ public class HttpServer2 {
             serverSocket = new ServerSocket(PUERTO);
         } catch (IOException e) {
             System.err.println("Could not listen on port: " + PUERTO + ".");
-            System.exit(1);
         }
 
         Socket clientSocket = null;
