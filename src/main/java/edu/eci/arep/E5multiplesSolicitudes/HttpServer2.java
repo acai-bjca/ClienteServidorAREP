@@ -130,12 +130,14 @@ public class HttpServer2 {
             System.out.println("Listo para recibir. Escuchando puerto " + PUERTO);
             while (true) {
                 clientSocket = serverSocket.accept();
-                out = new PrintWriter(clientSocket.getOutputStream(), true); // El in y el out son para el flujo de
-                // datos por el socket.
-                in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
-                salidaDatos = new BufferedOutputStream(clientSocket.getOutputStream()); // Muestra los datos respuesta
-                // al cliente.
-                respuestaSolicitud(clientSocket, out, in, salidaDatos);
+                while (!clientSocket.isClosed()) {
+                    out = new PrintWriter(clientSocket.getOutputStream(), true); // El in y el out son para el flujo de
+                    // datos por el socket.
+                    in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
+                    salidaDatos = new BufferedOutputStream(clientSocket.getOutputStream()); // Muestra los datos respuesta
+                    // al cliente.
+                    respuestaSolicitud(clientSocket, out, in, salidaDatos);
+                }
             }
 
         } catch (IOException e) {
