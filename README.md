@@ -31,11 +31,12 @@ ___
 • **EJERCICIO 1:**
 Leyendo los valores de un objeto URL.
 Ejecute el archivo DatosURL de la carpeta aDatosURL.
-![](src/main/resources/Readme/1-urlDatos.PNG)
+
+![](src/main/resources/Readme/1-urlDatos.png)
 
 • **EJERCICIO 2:**
 Leyendo páginas de internet
-Ejecute el archivo BrowserApp de la carpeta bBrowser e ingrese una página web. Al ejecutarlo, la aplicación genera un archivo html con la información capturada de la página, el cua les guardado en <[https://github.com/acai-bjca/ClienteServidorAREP/blob/master/src/main/resources/pagina.html](https://github.com/acai-bjca/ClienteServidorAREP/blob/master/src/main/resources/resultado.html)>.
+Ejecute el archivo BrowserApp de la carpeta bBrowser e ingrese una página web. Al ejecutarlo, la aplicación genera un archivo html con la información capturada de la página, el cual es guardado en <[https://github.com/acai-bjca/ClienteServidorAREP/blob/master/src/main/resources/pagina.html](https://github.com/acai-bjca/ClienteServidorAREP/blob/master/src/main/resources/resultado.html)>.
 
 ![](src/main/resources/Readme/2-leerPagina.PNG)
 
