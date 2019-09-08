@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package edu.eci.arep.BBrowser;
+package edu.eci.arep.bBrowser;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -16,7 +16,7 @@ import java.util.Scanner;
 
 /**
  * Recibe una direccion URL y genera un archivo html con la informacion de la
- * misma, el cual es guardado en resources con el nombre de resultado.html
+ * misma, el cual es guardado en resources con el nombre de resultado.html.
  *
  * @author Amalia
  */

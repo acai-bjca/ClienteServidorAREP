@@ -1,10 +1,11 @@
-package edu.eci.arep.ADatosURL;
+package edu.eci.arep.aDatosURL;
 
 import java.net.MalformedURLException;
 import java.net.URL;
 
 /**
-* DatosURL Muestra en pantalla los datos de una url
+* DatosURL Muestra en pantalla los datos de una url.
+* Estos datos detallan y describen la información de la direccion
 */
 public class DatosURL {
     
