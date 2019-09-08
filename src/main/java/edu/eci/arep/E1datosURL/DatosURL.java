@@ -1,16 +1,8 @@
 package edu.eci.arep.E1datosURL;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.Scanner;
 
-/**
- * Hello world!
- *
- */
 public class DatosURL {
 
     public static void main(String[] args) {

@@ -3,11 +3,11 @@
 En este repositorio, se implementó una aplicación web Cliente Servidor, en la cual se utilizaron sockets para la comunicación, Datagramas (protocolo UDP) 
 ___
 ### Insignias
-![Codacy Badge](https://api.codacy.com/project/badge/Grade/31b363d5a6fe4c9b8eb2d1cd22bc9c37)](https://www.codacy.com/app/acai-bjca/Ejercicio-1-AREP?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=acai-bjca/Ejercicio-1-AREP&amp;utm_campaign=Badge_Grade)
+![Codacy Badge](https://api.codacy.com/project/badge/Grade/31b363d5a6fe4c9b8eb2d1cd22bc9c37)]()
 ___
 ### Documentación
 
-Para leer la documentación diríjase a: <https://github.com/acai-bjca/SparkWebApp/tree/master/src/main/resources/documentacion/apidocs/edu/escuelaing/arep/spark>
+Para leer la documentación diríjase a: <https://github.com/acai-bjca/ClienteSevidorAREP/tree/master/src/main/resources/documentacion/apidocs/edu/eci/arep/spark>
 
 ___
 ### Uso del proyecto como librería
@@ -99,7 +99,7 @@ cuando el servidor este nuevamente funcionando.
 ![](src/main/resources/Readme/6-3.PNG)
 
 ___
-### Construido cona
+### Construido con
 
 • Java  
 • [Maven] (https://maven.apache.org/) - Gestión de dependencias

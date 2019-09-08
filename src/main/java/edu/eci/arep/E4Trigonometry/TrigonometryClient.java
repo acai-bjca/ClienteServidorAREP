@@ -16,10 +16,8 @@ public class TrigonometryClient {
             in = new BufferedReader(new InputStreamReader(echoSocket.getInputStream()));
         } catch (UnknownHostException e) {
             System.err.println("Don't know about host!.");
-            System.exit(1);
         } catch (IOException e) {
             System.err.println("Couldn´t get I/O for " + "the connection to: localhost.");
-            System.exit(1);
         }
 
         BufferedReader stdIn = new BufferedReader(new InputStreamReader(System.in));

@@ -31,9 +31,7 @@ public class EchoServer {
                 outputLine = "Respuestas: " + (numeroRespuesta * numeroRespuesta);
             } catch (NumberFormatException e) {
                 outputLine = "Respuestas: " + inputLine;
-                if (outputLine.equals("Respuestas: Bye.")) {
-                    break;
-                }
+                if (outputLine.equals("Respuestas: Bye.")) break;                
             }
             out.println(outputLine);
         }
