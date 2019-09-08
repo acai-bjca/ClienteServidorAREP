@@ -5,6 +5,10 @@ import java.net.URL;
 
 public class DatosURL {
 
+    /**
+     * Muestra en pantalla los datos de una url
+     * @param args Parámetros que recibe la clase principal
+     */
     public static void main(String[] args) {
         //Ejercicio 1
         try {

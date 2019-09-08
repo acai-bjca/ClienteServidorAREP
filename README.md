@@ -1,9 +1,9 @@
 ## Cliente - Servidor
 
-En este repositorio, se implementó una aplicación web Cliente Servidor, en la cual se utilizaron sockets para la comunicación, Datagramas (protocolo UDP) 
+En este repositorio, se desarrollaron 6 ejercicios. Algunos de ellos son pequeños programas Cliente-Servidor, en los que se utilizaron sockets para la comunicación y en el último se usaron Datagramas (protocolo UDP). 
 ___
 ### Insignias
-![Codacy Badge](https://api.codacy.com/project/badge/Grade/31b363d5a6fe4c9b8eb2d1cd22bc9c37)]()
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/f7e9780041f54e5ea2debbdf385e8fc4)](https://www.codacy.com/manual/acai-bjca/ClienteServidorAREP?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=acai-bjca/ClienteServidorAREP&amp;utm_campaign=Badge_Grade)
 ___
 ### Documentación
 
@@ -34,20 +34,17 @@ Ejecute el archivo DatosURL de la carpeta E1datosURL.
 
 ![](src/main/resources/Readme/1-urlDatos.PNG)
 
-
 • **EJERCICIO 2:**
 Leyendo páginas de internet
 Ejecute el archivo BrowserApp de la carpeta E2browser e ingrese una página web. Al ejecutarlo, la aplicación genera un archivo html con la información capturada de la página, el cua les guardado en <[https://github.com/acai-bjca/ClienteServidorAREP/blob/master/src/main/resources/pagina.html](https://github.com/acai-bjca/ClienteServidorAREP/blob/master/src/main/resources/resultado.html)>.
 
 ![](src/main/resources/Readme/2-leerPagina.PNG)
 
-
 • **EJERCICIO 3:**
 Servidor que recibe un número y responde el cuadrado de este número.
 Diríjase a la carpeta E3cuadradoNum, ejecute priemro el archivo EchoServer, y luego EchoClient. Ingrese un número y la aplicación le dará el resultado. 
 
 ![](src/main/resources/Readme/3-servidorCuadrado.PNG)
-
 
 • **EJERCICIO 4:**
 Servidor que recibe un número y responde el resultado de una operación trigonométrica sobre el número:
@@ -73,7 +70,6 @@ Servidor que soporta múltiples solicitudes seguidas (no concurrentes) de imáge
 -Solicite pagina.html
 
 ![](src/main/resources/Readme/5-4.PNG)
-
 
 • **EJERCICIO 6:**
 Programa que utiliza datagramas (usa protocolo UDP), se conecta a servidor y responde la hora actual en el servidor. El programa actualiza la hora
